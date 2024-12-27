@@ -1,5 +1,10 @@
+html {
+	height: 100%;
+}
+
 body {
 	margin: 0px;
+	height: calc(100% - 40px);
 	padding-top: 20px;
 	padding-bottom: 20px;
 	display: flex;
@@ -20,6 +25,7 @@ body {
 
 #content {
 	width: var(--content-width);
+	flex: 1;
 }
 
 #footer {
