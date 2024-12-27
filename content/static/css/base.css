@@ -1,0 +1,34 @@
+body {
+	margin: 0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	flex-flow: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#header {
+	width: var(--content-width);
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+	border-bottom: 2px dashed black;
+	padding-bottom: 20px;
+}
+
+#content {
+	width: var(--content-width);
+}
+
+#footer {
+	width: var(--content-width);
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+	border-top: 2px dashed black;
+	padding-top: 20px;
+}
+

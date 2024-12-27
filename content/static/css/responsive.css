@@ -1,0 +1,9 @@
+:root {
+	--content-width: 85%;
+}
+
+@media only screen and (max-width: 600px) {
+	:root {
+		--content-width: 95%;
+	}
+}
