@@ -4,9 +4,7 @@ html {
 
 body {
 	margin: 0px;
-	height: calc(100% - 40px);
-	padding-top: 20px;
-	padding-bottom: 20px;
+	height: 100%;
 	display: flex;
 	flex-flow: column;
 	justify-content: flex-start;
@@ -20,6 +18,7 @@ body {
 	justify-content: space-around;
 	align-items: center;
 	border-bottom: 2px dashed black;
+	padding-top: 40px;
 	padding-bottom: 20px;
 }
 
@@ -36,5 +35,6 @@ body {
 	align-items: center;
 	border-top: 2px dashed black;
 	padding-top: 20px;
+	padding-bottom: 40px;
 }
 
