@@ -29,7 +29,7 @@
 			}
 
 			function handleMDB(mdb) {
-				let posts_keys = mdb.has("post") ? Object.keys(mdb).filter(posts_filter) : new Array();
+				let posts_keys = Object.hasOwn(mdb, "post") ? Object.keys(mdb["post"]).filter(posts_filter) : new Array();
 				let post_count = posts_keys.length;
 
 				document.getElementById("post-count").innerHTML = post_count;
