@@ -9,9 +9,11 @@ This file is designed to test all **Python-Markdown extensions** in your static 
 
 ## 1. Abbreviations (`abbr`)
 
-The HTML standard is often misunderstood. *[HTML]: HyperText Markup Language
+The HTML standard is often misunderstood.
 
 When writing about HTML, it's good to know that HTML stands for HyperText Markup Language.
+
+*[HTML]: HyperText Markup Language
 
 ---
 
