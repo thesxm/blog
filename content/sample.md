@@ -3,7 +3,7 @@ TITLE: Sample Markdown File
 
 # Welcome to the Markdown Test
 
-This file is designed to test all **Python-Markdown extensions** in your static site generator. Let's dive in!
+This file is designed to test all **Python-Markdown extensions** in the static site generator. Let's dive in!
 
 ---
 
@@ -121,3 +121,13 @@ Linking to an internal page: [[HomePage]].
 This is the first line.  
 And this is the second line.
 
+---
+
+## 15. LaTeX (`markdown-katex`)
+
+Inline math: $E = mc^2$
+
+Block math:
+$$
+a^2 + b^2 = c^2
+$$
