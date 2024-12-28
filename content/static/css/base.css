@@ -24,7 +24,8 @@ body {
 }
 
 #content {
-	width: var(--content-width);
+	width: calc(var(--content-width) - 2 * var(--content-side-padding));
+	padding: 0px var(--content-side-padding);
 	flex: 1;
 }
 
