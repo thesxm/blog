@@ -11,6 +11,11 @@
 	flex-flow: column nowrap;
 	justify-content: flex-start;
 	align-items: flex-start;
+	padding: 10px;
+}
+
+.post .highlight {
+	background-color: whitesmoke;
 }
 
 .post-title {

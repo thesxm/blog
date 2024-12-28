@@ -29,9 +29,10 @@
 				return key.endsWith(".html");
 			}
 
-			function generate_post_element(data) {
+			function generate_post_element(data, highlight) {
 				let _ = document.createElement("div");
 				_.classList.add("post");
+				if (highlight == 1) _.classList.add("highlight");
 
 				let _title = document.createElement("a");
 				_title.href = "./post/" + data["link"];
@@ -72,7 +73,11 @@
 				});
 
 				let _ = document.getElementById("posts");
-				post_metadatas.forEach(data => _.appendChild(generate_post_element(data)));
+				let highlight = 1;
+				post_metadatas.forEach((data) => {
+					_.appendChild(generate_post_element(data, highlight)));
+					highlight = 1 - highlight;
+				});
 
 				return;
 			}
