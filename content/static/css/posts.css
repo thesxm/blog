@@ -3,7 +3,8 @@
 }
 
 #posts {
-	margin-top: 20px;
+	margin: 20px 0px;
+	border: 2px dashed darkgray;
 }
 
 .post {
@@ -15,7 +16,7 @@
 }
 
 .post.highlight {
-	background-color: lightyellow;
+	background-color: white;
 }
 
 .post-title {
