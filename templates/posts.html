@@ -41,8 +41,8 @@
 					let md = mdb["post"][post_key];
 					posts_metadata.push({
 						"link": post_key,
-						"title": md["blog_title"],
-						"timestamp": Number(md["timestamp"]),
+						"title": md["blog-title"][0],
+						"timestamp": Number(md["timestamp"][0]),
 					});
 				}
 
