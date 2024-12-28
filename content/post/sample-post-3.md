@@ -1,4 +1,4 @@
-TEMPLATE: base.html
+TEMPLATE: base-post.html
 TITLE: Sample Post
 BLOG-TITLE: wtf bro how does a sample post look??
 TIMESTAMP: 4
