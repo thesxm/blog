@@ -10,6 +10,7 @@ body {
 	justify-content: flex-start;
 	align-items: center;
 	font-family: math;
+	background-color: ghostwhite;
 }
 
 #header {
@@ -18,8 +19,8 @@ body {
 	flex-flow: row nowrap;
 	justify-content: space-around;
 	align-items: center;
-	border-bottom: 2px dashed black;
-	padding-top: 25px;
+	border-bottom: 2px dashed darkgray;
+	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
@@ -27,6 +28,9 @@ body {
 	width: calc(var(--content-width) - 2 * var(--content-side-padding));
 	padding: 0px var(--content-side-padding);
 	flex: 1;
+	background-color: whitesmoke;
+	border-right: 2px dashed darkgray;
+	border-left: 2px dashed darkgray;
 }
 
 #footer {
@@ -35,8 +39,8 @@ body {
 	flex-flow: row nowrap;
 	justify-content: space-around;
 	align-items: center;
-	border-top: 2px dashed black;
+	border-top: 2px dashed darkgray;
 	padding-top: 20px;
-	padding-bottom: 25px;
+	padding-bottom: 20px;
 }
 
