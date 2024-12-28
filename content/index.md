@@ -1,8 +1,8 @@
-TEMPLATE: index.html
-TITLE: Saksham
+TEMPLATE: base.html
+TITLE: Saksham's Blog
 
-# Hey, I'm Saksham  
-I like to build stuff.
+# Welcome to my blog
 
-## Education
-I am a student at Jaypee Institute of Information and Technology, Noida, pursuing Bachelors of Technology in Computer Science and Engineering.
+I’m Saksham, a tech enthusiast exploring the endless possibilities of programming and problem-solving. This blog is my space to share ideas, projects, and thoughts on technology and development.
+
+Thanks for stopping by—feel free to look around and connect with me if something catches your interest!
