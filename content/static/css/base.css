@@ -24,6 +24,10 @@ body {
 	padding-bottom: 20px;
 }
 
+#header a {
+	font-weight: bold
+}
+
 #content {
 	width: calc(var(--content-width) - 2 * var(--content-side-padding));
 	padding: 0px var(--content-side-padding);
