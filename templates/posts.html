@@ -29,6 +29,28 @@
 				return key.endsWith(".html");
 			}
 
+			function generate_post_element(data) {
+				let _ = document.createElement("div");
+				_.classList.add("post");
+
+				let _title = document.createElement("span");
+				_.classList.add("post-title");
+				_.innerHTML = data["title"];
+
+				let _timestamp = document.createElement("span");
+				_.classList.add("post-timestamp");
+				_.innerHTML = data["timestamp"];
+
+				let _a = document.createElement("a");
+				_a.dataset.href = "./post/" + data["link"];
+				_a.appendChild(_title);
+				_a.appendChild(_timestamp);
+
+				_.appendChild(_a);
+
+				return _;
+			}
+
 			function handleMDB(mdb) {
 				let post_keys = Object.hasOwn(mdb, "post") ? Object.keys(mdb["post"]).filter(post_filter) : new Array();
 				let post_count = post_keys.length;
@@ -51,7 +73,10 @@
 					return b["timestamp"] - a["timestamp"];
 				});
 
-				console.log(post_metadatas);
+				let _ = document.getElementById("posts");
+				post_metadatas.forEach(data => _.appendChild(generate_post_element(data)));
+
+				return;
 			}
 
 			fetch("./metadatabase.json").then(res => res.json()).then(res => handleMDB(res));
