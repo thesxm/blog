@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="./static/css/base.css">
 		<link rel="stylesheet" href="./static/css/responsive.css">
 		<link rel="stylesheet" href="./static/css/codehilite.css">
+		<link rel="stylesheet" href="./static/css/posts.css">
 	</head>
 	<body>
 		<div id="header">
@@ -24,13 +25,13 @@
 			</span>
 		</div>
 		<script>
-			function posts_filter(key) {
+			function post_filter(key) {
 				return key.endsWith(".html");
 			}
 
 			function handleMDB(mdb) {
-				let post_keys = Object.hasOwn(mdb, "post") ? Object.keys(mdb["post"]).filter(posts_filter) : new Array();
-				let post_count = posts_keys.length;
+				let post_keys = Object.hasOwn(mdb, "post") ? Object.keys(mdb["post"]).filter(post_filter) : new Array();
+				let post_count = post_keys.length;
 
 				document.getElementById("post-count").innerHTML = post_count;
 
