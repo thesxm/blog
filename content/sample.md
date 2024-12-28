@@ -1,6 +1,5 @@
-Title: Sample Markdown File
-Author: Saksham
-Date: 2024-12-27
+TEMPLATE: base.html
+TITLE: Sample Markdown File
 
 # Welcome to the Markdown Test
 
