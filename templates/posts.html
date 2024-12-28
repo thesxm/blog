@@ -75,7 +75,7 @@
 				let _ = document.getElementById("posts");
 				let highlight = 1;
 				post_metadatas.forEach((data) => {
-					_.appendChild(generate_post_element(data, highlight)));
+					_.appendChild(generate_post_element(data, highlight));
 					highlight = 1 - highlight;
 				});
 
