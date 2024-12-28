@@ -42,7 +42,7 @@
 				_timestamp.innerHTML = data["timestamp"];
 
 				let _a = document.createElement("a");
-				_a.dataset.href = "./post/" + data["link"];
+				_a.href = "./post/" + data["link"];
 				_a.appendChild(_title);
 				_a.appendChild(_timestamp);
 
