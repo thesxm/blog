@@ -125,9 +125,9 @@ And this is the second line.
 
 ## 15. LaTeX (`markdown-katex`)
 
-Inline math: $E = mc^2$
+Inline math: $`E = mc^2`$
 
 Block math:
-$$
+```math
 a^2 + b^2 = c^2
-$$
+```
