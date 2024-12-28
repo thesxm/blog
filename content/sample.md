@@ -21,7 +21,8 @@ When writing about HTML, it's good to know that HTML stands for HyperText Markup
 
 Here’s a paragraph with a custom ID and class:
 
-This paragraph has attributes applied. {#custom-id .custom-class}
+This paragraph has attributes applied.
+{#custom-id .custom-class}
 
 ---
 
