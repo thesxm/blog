@@ -2,6 +2,10 @@
 	content: " Posts";
 }
 
+#posts {
+	margin-top: 20px;
+}
+
 .post {
 	display: flex;
 	flex-flow: column nowrap;
@@ -15,5 +19,5 @@
 }
 
 .post-timestamp {
-	text-align: right;
+	align-self: flex-end;
 }

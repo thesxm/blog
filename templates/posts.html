@@ -39,8 +39,9 @@
 				_title.innerHTML = data["title"];
 
 				let _timestamp = document.createElement("span");
+				let d = new Date(data["timestamp"]);
 				_timestamp.classList.add("post-timestamp");
-				_timestamp.innerHTML = data["timestamp"];
+				_timestamp.innerHTML = d.toDateString();
 
 				_.appendChild(_title);
 				_.appendChild(_timestamp);
