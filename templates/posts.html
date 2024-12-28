@@ -34,12 +34,12 @@
 				_.classList.add("post");
 
 				let _title = document.createElement("span");
-				_.classList.add("post-title");
-				_.innerHTML = data["title"];
+				_title.classList.add("post-title");
+				_title.innerHTML = data["title"];
 
 				let _timestamp = document.createElement("span");
-				_.classList.add("post-timestamp");
-				_.innerHTML = data["timestamp"];
+				_timestamp.classList.add("post-timestamp");
+				_timestamp.innerHTML = data["timestamp"];
 
 				let _a = document.createElement("a");
 				_a.dataset.href = "./post/" + data["link"];
