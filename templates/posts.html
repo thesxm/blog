@@ -33,7 +33,8 @@
 				let _ = document.createElement("div");
 				_.classList.add("post");
 
-				let _title = document.createElement("span");
+				let _title = document.createElement("a");
+				_title.href = "./post/" + data["link"];
 				_title.classList.add("post-title");
 				_title.innerHTML = data["title"];
 
@@ -41,12 +42,8 @@
 				_timestamp.classList.add("post-timestamp");
 				_timestamp.innerHTML = data["timestamp"];
 
-				let _a = document.createElement("a");
-				_a.href = "./post/" + data["link"];
-				_a.appendChild(_title);
-				_a.appendChild(_timestamp);
-
-				_.appendChild(_a);
+				_.appendChild(_title);
+				_.appendChild(_timestamp);
 
 				return _;
 			}

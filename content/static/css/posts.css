@@ -1,3 +1,19 @@
 #post-count::after {
 	content: " Posts";
 }
+
+.post {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.post-title {
+	font-size: 1.17em;
+	font-weight: bold;
+}
+
+.post-timestamp {
+	text-align: right;
+}
