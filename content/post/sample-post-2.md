@@ -1,5 +1,6 @@
 TEMPLATE: base.html
 TITLE: Sample Post
+BLOG-TITLE: How a sample post looks, again?
 TIMESTAMP: 1
 
 [TOC]
