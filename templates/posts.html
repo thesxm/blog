@@ -14,6 +14,9 @@
 			<a href="https://github.com/thesxm">GitHub</a>
 		</div>
 		<div id="content">
+			<h1>My Posts</h1>
+			<div id="post-count"></div>
+			<div id="posts"></div>
 		</div>
 		<div id="footer">
 			<span>
@@ -21,9 +24,36 @@
 			</span>
 		</div>
 		<script>
-			fetch("./metadabase.json").then(res => res.json()).then((res) => {
-				document.getElementById("content").innerHTML = res.stringify();
-			});
+			function posts_filter(key) {
+				return key.endsWith(".html")
+			}
+
+			function handleMDB(mdb) {
+				let posts_keys = mdb.has("post") ? Object.keys(mdb).filter(posts_filter) : new Array();
+				let post_count = posts_keys.length;
+
+				document.getElementById("post-count").innerHTML = post_count;
+
+				if (post_count == 0) return;
+
+				let posts_metadata = new Array();
+				for (const post_key of post_keys) {
+					let md = mdb["post"][post_key];
+					posts_metadata.push({
+						"link": post_key,
+						"title": md["blog_title"],
+						"timestamp": Number(md["timestamp"]);
+					});
+				}
+
+				posts_metadata.sort((a, b) => {
+					return b["timestamp"] - a["timestamp"];
+				});
+
+				console.log(posts_metadata);
+			}
+
+			fetch("./metadatabase.json").then(res => res.json()).then(res => handleMDB(res));
 		</script>
 	</body>
 </html>
