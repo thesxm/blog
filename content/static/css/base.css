@@ -24,8 +24,13 @@ body {
 	padding-bottom: 20px;
 }
 
+#header a:link, #header a:visited {
+	color: black;
+}
+
 #header a {
-	font-weight: bold
+	font-weight: bold;
+	text-decoration: double underline;
 }
 
 #content {
