@@ -2,5 +2,5 @@
 	"source": "content",
 	"output": "docs",
 	"templates": "templates",
-	"mdb": "metadatabase.json"
+	"mdb": "docs/metadatabase.json"
 }
