@@ -13,7 +13,7 @@ jobs:
       - name: Generate static files
         run: |
           mkdir docs
-          housemd-build content docs templates metadatabase.json
+          housemd-build housemd-config.json
       - name: Upload static files as artifact
         uses: actions/upload-pages-artifact@v3
         with:
