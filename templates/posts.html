@@ -25,8 +25,8 @@
 			</span>
 		</div>
 		<script>
-			function post_filter(key) {
-				return key.endsWith(".html");
+			function post_filter(d) {
+				return (d[0].endsWith(".html") && Object.hasOwn(d[1], "title") && Object.hasOwn(d[1], "timestamp"));
 			}
 
 			function generate_post_element(data, highlight) {
@@ -51,19 +51,17 @@
 			}
 
 			function handleMDB(mdb) {
-				let post_keys = Object.hasOwn(mdb, "post") ? Object.keys(mdb["post"]).filter(post_filter) : new Array();
-				let post_count = post_keys.length;
+				let post_full_datas = Object.hasOwn(mdb, "post") ? Object.entries(mdb["post"]).filter(post_filter) : new Array();
 
+				let post_count = post_full_datas.length;
 				document.getElementById("post-count").innerHTML = post_count;
 
-				if (post_count == 0) return;
-
 				let post_metadatas = new Array();
-				for (const post_key of post_keys) {
-					let md = mdb["post"][post_key];
+				for (const post_full_data of post_full_datas) {
+					let md = post_full_data[1];
 					post_metadatas.push({
-						"link": post_key,
-						"title": md["blog-title"][0],
+						"link": post_full_data[0],
+						"title": md["title"][0],
 						"timestamp": Number(md["timestamp"][0]),
 					});
 				}
