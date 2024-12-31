@@ -14,8 +14,6 @@ jobs:
         run: |
           mkdir docs
           housemd-build content docs templates metadatabase.json
-      - name: Generate pygments css file for codehilite extension
-        run: pygmentize -S default -f html -a .codehilite > docs/static/css/codehilite.css
       - name: Upload static files as artifact
         uses: actions/upload-pages-artifact@v3
         with:
