@@ -26,7 +26,9 @@ In the config file you can optionally specify a metadatabase path under the `mdb
 
 ```json
 {
-    // ... other configs
+    "source": "source_dir",
+    "output": "output_dir",
+    "templates": "templates_dir",
     "mdb": "path/to/metadatabase.json"
 }
 ```
