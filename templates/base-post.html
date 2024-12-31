@@ -2,7 +2,9 @@
 <html lang="en">
 	<head>
 		<title>{{ TITLE }}</title>
+		<meta charset="UTF-8">
 		<link rel="stylesheet" href="../static/css/base.css">
+		<link rel="stylesheet" href="../static/css/base-post.css">
 		<link rel="stylesheet" href="../static/css/responsive.css">
 		<link rel="stylesheet" href="../static/css/codehilite.css">
 	</head>
@@ -14,6 +16,8 @@
 			<a href="https://github.com/thesxm">GitHub</a>
 		</div>
 		<div id="content">
+			<div id="post-title">{{ TITLE }}</div>
+			<hr>
 			{{ CONTENT }}
 		</div>
 		<div id="footer">
